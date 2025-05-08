@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background:orange;
+    color: #fff;
+    padding: 25px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('./images/data.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+/* General styling for portfolio image */
+.portfolio-image {
+    width: 100%;
+    /* Makes the image responsive */
+    max-width: 300px;
+    /* Sets the maximum width */
+    height: auto;
+    /* Maintains aspect ratio */
+    border-radius: 8px;
+    /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adds subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for image */
+.portfolio-image:hover {
+    transform: scale(1.05);
+    /* Slightly zoom in the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Darker shadow on hover */
+}
+.portfolio-image {
+    border: 10px solid #fff;
+    /* White border around the image */
+    padding: 18px;
+    /* Adds padding inside the border */
+}
+/* Center the image on the page */
+.portfolio-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.portfolio-image {
+    filter: grayscale(50%);
+    transition: filter 0.3s ease;
+}
+
+.portfolio-image:hover {
+    filter: grayscale(0%);
+    /* Removes grayscale on hover */
+}
+.section {
+    background: #fff;
+    padding: 40px 0;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service,
+.box {
+    flex: 1 1 200px;
+    background: #eaeaea;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    margin: 10px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #007bff;
+}
+
+footer {
+    background: orange;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+}
